@@ -21,7 +21,6 @@
 - **Интеграция с InternationalLevel** — награда игроков опытом и уровнями
 - **Система наград** — деньги, опыт, предметы, команды от консоли
 - **Автоматическая привязка к датам** — квесты автоматически обновляются каждый день/неделю
-- **Поддержка MySQL/файлов** — гибкое хранение данных игроков (SQLite/MySQL)
 - **Полная кастомизация** — сообщения, меню, квесты — всё в конфигах
 
 ## 🔧 Требования
@@ -101,17 +100,21 @@ git clone https://github.com/MrDevive/InternationalStatsMySQL.git
 **Пример настройки квеста в `DailyQuests.yml`:**
 
 ```yaml
-daily-quests:
-  '1':
-    name: '&aШахтёр'
-    objective: 'MINE'
-    material: 'DIAMOND_PICKAXE'
-    amount: 50
-    lore:
-      - '&7Добудьте 50 блоков руды'
-    rewards:
-      money: 150.0
-      command: 'give %player% diamond 1'
+quests:
+  kill_zombies:
+    type: KILL_MOBS
+    entity: ZOMBIE
+    target: 10
+    name: "&a&lУбийца зомби"
+    description: "&7Убейте 10 зомби"
+    reward_commands:
+      - "give {player} diamond 1"
+      - "give {player} emerald 5"
+    reward_display:
+      - "&6✦ 1 алмаз"
+      - "&6✦ 5 изумрудов"
+    chance: 0.8
+    icon: DIAMOND_SWORD
 ```
 
 ## 🛠️ Команды и права
