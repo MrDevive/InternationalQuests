@@ -89,7 +89,7 @@ git clone https://github.com/MrDevive/InternationalStatsMySQL.git
 
 | Файл | Назначение |
 | :--- | :--- |
-| `config.yml` | Основные настройки (хранение данных, язык, интеграции) |
+| `config.yml` | Основные настройки |
 | `message.yml` | Все сообщения игрокам |
 | `DailyQuests.yml` | Настройка ежедневных квестов |
 | `WeeklyQuests.yml` | Настройка еженедельных квестов |
@@ -122,10 +122,7 @@ quests:
 | Команда | Описание | Право (`permission`) |
 | :--- | :--- | :--- |
 | `/quests` | Открыть главное GUI меню квестов | `internationalquests.use` |
-| `/quests daily` | Открыть GUI ежедневных квестов | `internationalquests.use` |
-| `/quests weekly` | Открыть GUI еженедельных квестов | `internationalquests.use` |
-| `/quests give <игрок> <квест>` | Выдать игроку квест принудительно | `internationalquests.admin` |
-| `/quests reset <daily/weekly>` | Сбросить прогресс (всем или себе) | `internationalquests.admin` |
+| `/quests reset <daily/weekly/all>` | Сбросить прогресс (всем или себе) | `internationalquests.admin` |
 | `/quests reload` | Перезагрузить все конфиги | `internationalquests.admin` |
 
 ## ❓ Часто задаваемые вопросы (FAQ)
