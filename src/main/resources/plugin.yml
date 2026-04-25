@@ -1,0 +1,26 @@
+# plugin.yml
+name: InternationalQuests
+version: 1.0.0
+main: com.example.internationalquests.InternationalQuests
+api-version: 1.21
+author: Devive
+description: Система ежедневных квестов с GUI
+
+softdepend: [InternationalLevel, PlaceholderAPI]
+
+commands:
+  quests:
+    description: Открыть меню квестов или управление плагином
+    usage: /<command> [reload|reset [daily|weekly|all] [игрок]]
+    aliases: [q]
+
+permissions:
+  internationalquests.reload:
+    description: Разрешает перезагружать плагин
+    default: op
+  internationalquests.reset.self:
+    description: Разрешает сбрасывать свои квесты
+    default: true
+  internationalquests.reset.others:
+    description: Разрешает сбрасывать квесты других игроков
+    default: op

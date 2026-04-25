@@ -1,0 +1,62 @@
+messages:
+  # Сообщения квестов
+  quest-complete: "&aВы выполнили квест {quest}!"
+  quest-progress: "&eПрогресс квеста {quest}: {progress}/{target}"
+  quests-reset: "&aВаши квесты были сброшены"
+  quests-reset-partial: "&aОбновлено выполненных квестов: {count}"
+  quests-reset-timer: "&aТаймер квестов обновлен! Выполненных квестов нет."
+  quests-given: "&aВам выданы новые квесты!"
+  quest-not-found: "&cКвест не найден"
+  quest-auto-replaced: "&aВыполненный квест &e{completed} &aзаменён на &e{new}&a!"
+  quests-reset-daily: "&aВаши ежедневные квесты были сброшены!"
+  quests-reset-weekly: "&5Ваши еженедельные квесты были сброшены!"
+  quests-reset-all: "&aВсе ваши квесты были сброшены!"
+
+  # Сообщения GUI
+  gui-title: "&6Ежедневные квесты"
+  gui-info-title: "&6Информация"
+  gui-completed-status: "&a✓ Выполнен!"
+  gui-completed-hint: "&7Будет заменён при сбросе"
+  gui-progress-format: "&eПрогресс: &f{progress}/{target}"
+  gui-swap-hint: "&6▶ Нажмите, чтобы сменить квест"
+  gui-swaps-left: "&7Осталось смен: {current}/{max}"
+  gui-no-swaps: "&c✗ Нет доступных смен"
+  gui-swaps-reset: "&7Сброс смен через: {time}"
+  gui-cannot-swap: "&7Выполненные квесты нельзя сменить"
+  gui-info-swaps: "&eСмен квестов: {current}/{max}"
+  gui-info-swaps-reset: "&7Сброс смен через: {time}"
+  gui-info-quests-reset: "&eДо сброса выполненных квестов:"
+
+  # Сообщения команд
+  reload-success: "&aПлагин перезагружен"
+  no-permission: "&cУ вас нет прав"
+  invalid-usage: "&cИспользование: /quests [reload|reset]"
+  player-only: "&cЭту команду может выполнить только игрок."
+  player-not-found: "&cИгрок не найден!"
+  quests-reset-self: "&aВаши квесты были сброшены!"
+  quests-reset-other: "&aКвесты игрока {player} были сброшены!"
+  quests-reset-by-admin: "&aВаши квесты были сброшены администратором!"
+
+  # Сообщения смены квестов
+  no-swaps-left: "&cУ вас не осталось смен квестов!"
+  cannot-swap-completed: "&cНельзя сменить выполненный квест!"
+  no-available-quests: "&cНет доступных квестов для замены!"
+  quest-swapped: "&aВы сменили квест &e{old} &aна &e{new}&a!"
+
+  # Формат времени
+  time-format-hours: "{hours}ч {minutes}м {seconds}с"
+  time-format-minutes: "{minutes}м {seconds}с"
+  time-format-seconds: "{seconds}с"
+  time-format-zero: "0с"
+
+  progress-craft: "&eСкрафчено: &f{progress}/{target}"
+  progress-place: "&eУстановлено: &f{progress}/{target}"
+  progress-smelt: "&eПереплавлено: &f{progress}/{target}"
+  progress-interact: "&eВзаимодействий: &f{progress}/{target}"
+  progress-take-damage: "&eПолучено урона: &f{progress}/{target}"
+  progress-deal-damage: "&eНанесено урона: &f{progress}/{target}"
+
+  weekly-quests-given: "&5Вам выданы новые еженедельные квесты!"
+  weekly-quests-reset: "&5Ваши еженедельные квесты были сброшены!"
+  weekly-quests-reset-partial: "&5Обновлено выполненных еженедельных квестов: {count}"
+  progress-gain-experience: "&eПолучено опыта: &f{progress}/{target}"

@@ -1,0 +1,249 @@
+quests:
+  kill_zombies:
+    type: KILL_MOBS
+    entity: ZOMBIE
+    target: 10
+    name: "&a&lУбийца зомби"
+    description: "&7Убейте 10 зомби"
+    reward_commands:
+      - "give {player} diamond 1"
+      - "give {player} emerald 5"
+    reward_display:
+      - "&6✦ 1 алмаз"
+      - "&6✦ 5 изумрудов"
+    chance: 0.8
+    icon: DIAMOND_SWORD
+
+  break_stone:
+    type: BREAK_BLOCKS
+    block: STONE
+    target: 100
+    name: "&7&lКаменщик"
+    description: "&7Сломайте 100 камня"
+    reward_commands:
+      - "give {player} stone 64"
+      - "give {player} iron_pickaxe 1"
+    reward_display:
+      - "&6✦ 64 камня"
+      - "&6✦ Железная кирка"
+    chance: 0.6
+    icon: STONE
+
+  catch_fish:
+    type: CATCH_FISH
+    target: 5
+    name: "&b&lРыбак"
+    description: "&7Поймайте 5 рыб"
+    reward_commands:
+      - "give {player} raw_cod 5"
+      - "give {player} fishing_rod 1"
+    reward_display:
+      - "&6✦ 5 сырой трески"
+      - "&6✦ Удочка"
+    chance: 0.7
+    icon: FISHING_ROD
+
+  walk_distance:
+    type: WALK_DISTANCE
+    target: 500
+    name: "&e&lИсследователь"
+    description: "&7Пройдите 500 блоков"
+    reward_commands:
+      - "give {player} compass 1"
+      - "give {player} leather_boots 1"
+    reward_display:
+      - "&6✦ Компас"
+      - "&6✦ Кожаные ботинки"
+    chance: 0.9
+    icon: LEATHER_BOOTS
+
+  play_time:
+    type: PLAY_TIME
+    target: 3600
+    name: "&d&lЗаядлый игрок"
+    description: "&7Проведите на сервере 1 час"
+    reward_commands:
+      - "give {player} clock 1"
+      - "give {player} experience_bottle 16"
+    reward_display:
+      - "&6✦ Часы"
+      - "&6✦ 16 пузырьков опыта"
+    chance: 0.9
+    icon: CLOCK
+
+  eat_apple:
+    type: EAT_ITEM
+    item: APPLE
+    target: 3
+    name: "&c&lЯблочный перекус"
+    description: "&7Съешьте 3 яблока"
+    reward_commands:
+      - "give {player} golden_apple 1"
+      - "give {player} apple 8"
+    reward_display:
+      - "&6✦ Золотое яблоко"
+      - "&6✦ 8 яблок"
+    chance: 0.5
+    icon: APPLE
+
+  craft_diamond_pickaxe:
+    type: CRAFT_ITEM
+    item: DIAMOND_PICKAXE
+    target: 2
+    name: "&b&lМастер-кузнец"
+    description: "&7Скрафтите 2 алмазные кирки"
+    reward_commands:
+      - "give {player} diamond 5"
+      - "give {player} enchanted_book[minecraft:fortune] 1"
+    reward_display:
+      - "&6✦ 5 алмазов"
+      - "&6✦ Книга на Удачу"
+    chance: 0.7
+    icon: CRAFTING_TABLE
+
+  craft_bread:
+    type: CRAFT_ITEM
+    item: BREAD
+    target: 20
+    name: "&e&lПекарь"
+    description: "&7Испеките 20 хлеба"
+    reward_commands:
+      - "give {player} cake 3"
+      - "give {player} wheat 64"
+    reward_display:
+      - "&6✦ 3 торта"
+      - "&6✦ 64 пшеницы"
+    chance: 0.8
+    icon: BREAD
+
+  place_oak_planks:
+    type: PLACE_BLOCKS
+    block: OAK_PLANKS
+    target: 100
+    name: "&a&lСтроитель"
+    description: "&7Установите 100 дубовых досок"
+    reward_commands:
+      - "give {player} oak_log 32"
+      - "give {player} wooden_axe 1"
+    reward_display:
+      - "&6✦ 32 дубовых бревна"
+      - "&6✦ Деревянный топор"
+    chance: 0.9
+    icon: OAK_PLANKS
+
+  place_stone_bricks:
+    type: PLACE_BLOCKS
+    block: STONE_BRICKS
+    target: 64
+    name: "&7&lАрхитектор"
+    description: "&7Установите 64 каменных кирпича"
+    reward_commands:
+      - "give {player} chiseled_stone_bricks 16"
+      - "give {player} stone 64"
+    reward_display:
+      - "&6✦ 16 резных кирпичей"
+      - "&6✦ 64 камня"
+    chance: 0.7
+    icon: STONE_BRICKS
+
+  smelt_iron:
+    type: SMELT_ITEMS
+    item: IRON_INGOT
+    target: 32
+    name: "&f&lПлавильщик"
+    description: "&7Переплавьте 32 железных слитка"
+    reward_commands:
+      - "give {player} furnace 4"
+      - "give {player} coal 16"
+    reward_display:
+      - "&6✦ 4 печи"
+      - "&6✦ 16 угля"
+    chance: 0.8
+    icon: FURNACE
+
+  smelt_gold:
+    type: SMELT_ITEMS
+    item: GOLD_INGOT
+    target: 16
+    name: "&6&lЗолотых дел мастер"
+    description: "&7Переплавьте 16 золотых слитков"
+    reward_commands:
+      - "give {player} golden_apple 2"
+      - "give {player} gold_ingot 8"
+    reward_display:
+      - "&6✦ 2 золотых яблока"
+      - "&6✦ 8 золотых слитков"
+    chance: 0.6
+    icon: GOLD_INGOT
+
+  open_chests:
+    type: INTERACT_BLOCKS
+    block: CHEST
+    target: 10
+    name: "&6&lКладоискатель"
+    description: "&7Откройте 10 сундуков"
+    reward_commands:
+      - "give {player} golden_apple 3"
+      - "give {player} chest 5"
+    reward_display:
+      - "&6✦ 3 золотых яблока"
+      - "&6✦ 5 сундуков"
+    chance: 0.7
+    icon: CHEST
+
+  use_enchanting_table:
+    type: INTERACT_BLOCKS
+    block: ENCHANTING_TABLE
+    target: 5
+    name: "&5&lЧародей"
+    description: "&7Взаимодействуйте с столом зачарований 5 раз"
+    reward_commands:
+      - "give {player} lapis_lazuli 32"
+      - "give {player} enchanting_table 1"
+    reward_display:
+      - "&6✦ 32 лазурита"
+      - "&6✦ Стол зачарований"
+    chance: 0.5
+    icon: ENCHANTING_TABLE
+
+  take_damage_quest:
+    type: TAKE_DAMAGE
+    target: 30
+    name: "&c&lВыживальщик"
+    description: "&7Получите 30 единиц урона"
+    reward_commands:
+      - "give {player} golden_apple 5"
+      - "give {player} shield 1"
+    reward_display:
+      - "&6✦ 5 золотых яблок"
+      - "&6✦ Щит"
+    chance: 0.8
+    icon: SHIELD
+
+  deal_damage_quest:
+    type: DEAL_DAMAGE
+    target: 200
+    name: "&4&lВоитель"
+    description: "&7Нанесите 200 единиц урона"
+    reward_commands:
+      - "give {player} diamond_sword 1"
+      - "give {player} iron_ingot 16"
+    reward_display:
+      - "&6✦ Алмазный меч"
+      - "&6✦ 16 железа"
+    chance: 0.8
+    icon: DIAMOND_SWORD
+
+  gain_experience_daily:
+    type: GAIN_EXPERIENCE
+    target: 500
+    name: "&a&lОпытный игрок"
+    description: "&7Получите 500 опыта из InternationalLevel"
+    reward_commands:
+      - "give {player} experience_bottle 16"
+      - "give {player} emerald 5"
+    reward_display:
+      - "&6✦ 16 пузырьков опыта"
+      - "&6✦ 5 изумрудов"
+    chance: 0.9
+    icon: EXPERIENCE_BOTTLE
